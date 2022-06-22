@@ -1,9 +1,11 @@
 using LearningOrganizerApi.Models;
 using LearningOrganizerApi.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearningOrganizerApi.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class UsersController : ControllerBase
@@ -12,6 +14,43 @@ public class UsersController : ControllerBase
 
     public UsersController(UsersService usersService) =>
         _usersService = usersService;
+
+
+    [AllowAnonymous]
+    [Route("autenticate")]
+    [HttpPost]
+    public ActionResult Login( [FromBody] User user)
+    {
+        var token = _usersService.Authenticate(user.Email, user.Password);
+
+        if(token is null)
+        {
+            return Unauthorized();
+        }
+        return Ok(new {token, user});
+    }
+
+
+
+    // [AllowAnonymous]
+    // [Route("autenticate")]
+    // [HttpPost]
+    // public async Task<ActionResult<User>> Autenticate( [FromBody] User user)
+    // {
+    //     var userFromDb = await _usersService.GetAsync(user.Email);
+    //     if (userFromDb is null)
+    //     {
+    //         return NotFound();
+    //     }
+    //     if (userFromDb.Password != user.Password)
+    //     {
+    //         return Unauthorized();
+    //     }
+    //     return userFromDb;
+    // }
+
+
+
 
     [HttpGet]
     public async Task<List<User>> Get() =>

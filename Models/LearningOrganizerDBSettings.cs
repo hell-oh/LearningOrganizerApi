@@ -9,4 +9,6 @@ public class LearningOrganizerDBSettings
     public string LearningsCollectionName { get; set; } = null!;
 
     public string UsersCollectionName { get; set; } = null!;
+
+    public string JWTKey { get; set; } = null!;
 }

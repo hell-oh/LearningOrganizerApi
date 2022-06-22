@@ -1,5 +1,9 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 using LearningOrganizerApi.Models;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using MongoDB.Driver;
 
 namespace LearningOrganizerApi.Services;
@@ -7,6 +11,8 @@ namespace LearningOrganizerApi.Services;
 public class UsersService
 {
     private readonly IMongoCollection<User> _usersCollection;
+
+    private readonly string _key;
 
     public UsersService(
         IOptions<LearningOrganizerDBSettings> LearningOrganizerDBSettings)
@@ -19,6 +25,8 @@ public class UsersService
 
         _usersCollection = mongoDatabase.GetCollection<User>(
             LearningOrganizerDBSettings.Value.UsersCollectionName);
+
+        _key = LearningOrganizerDBSettings.Value.JWTKey;
     }
 
     public async Task<List<User>> GetAsync() =>
@@ -54,4 +62,31 @@ public class UsersService
     //     // user.Notes.Add(newNote);
     //     // await UpdateAsync(id, user);
     // }
+
+
+    public string Authenticate(string email, string password)
+    {
+        var user = _usersCollection.Find(x => x.Email == email && x.Password == password).FirstOrDefault();
+        if (user is null)
+        {
+            return null;
+        }
+    
+        var tokenHandler = new JwtSecurityTokenHandler();
+        
+        var tokenKey = Encoding.ASCII.GetBytes(_key);
+
+        var tokenDescriptor = new SecurityTokenDescriptor(){
+
+            Subject = new ClaimsIdentity(new Claim[] {
+                new Claim(ClaimTypes.Email, email)
+            }),
+            Expires = DateTime.UtcNow.AddDays(7),
+            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
+        };
+
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+        return tokenHandler.WriteToken(token);
+    }
+
 }
