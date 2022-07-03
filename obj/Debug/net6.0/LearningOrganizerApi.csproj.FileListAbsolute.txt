@@ -41,3 +41,16 @@
 /home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/obj/Debug/net6.0/LearningOrganizerApi.pdb
 /home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/obj/Debug/net6.0/LearningOrganizerApi.genruntimeconfig.cache
 /home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/obj/Debug/net6.0/ref/LearningOrganizerApi.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/System.Security.Permissions.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Scrutor.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.dll
+/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll

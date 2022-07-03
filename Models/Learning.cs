@@ -8,7 +8,7 @@ public class Learning
     [BsonId]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
-
+    public string UserId { get; set; } = null!;
     public string ContentName { get; set; } = null!;
     public string Category { get; set; } = null!;
     public string Description { get; set; } = null!;
@@ -17,6 +17,8 @@ public class Learning
     public int Difficulty { get; set; } = 0;
     public string EstimatedTime { get; set; } = null!;
     public bool Completed { get; set; } = false;
+    public bool Public { get; set; } = false;
+
 
     // collección de notas
     // [BsonElement]

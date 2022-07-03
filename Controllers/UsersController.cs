@@ -1,10 +1,12 @@
 using LearningOrganizerApi.Models;
 using LearningOrganizerApi.Services;
 using Microsoft.AspNetCore.Authorization;
+// using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearningOrganizerApi.Controllers;
 
+// [DisableCors]
 [Authorize]
 [ApiController]
 [Route("api/[controller]")]

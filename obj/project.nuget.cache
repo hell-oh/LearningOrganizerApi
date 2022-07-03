@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Yu+e/43SGMwBfJa9ZuBf3Nj3YiegqMut0bKTQd3cVvszamxUNhZ5DX6NQaCwx+ew//FFroIFzRjwz1hrs1v/Aw==",
+  "dgSpecHash": "Y0hRtPDAs/YTIGH/3w5zhRS6tsFeMvJow8cNvZf6Ge6L5JugeMo+EncRLVtARUlSSXHSynDmCF/KmUxueKFENA==",
   "success": true,
   "projectFilePath": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/LearningOrganizerApi.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,9 @@
     "/home/felipe_buker/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.extensions.configuration.abstractions/2.2.0/microsoft.extensions.configuration.abstractions.2.2.0.nupkg.sha512",
-    "/home/felipe_buker/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.2.0/microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+    "/home/felipe_buker/.nuget/packages/microsoft.extensions.dependencyinjection/2.1.0/microsoft.extensions.dependencyinjection.2.1.0.nupkg.sha512",
+    "/home/felipe_buker/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.9/microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "/home/felipe_buker/.nuget/packages/microsoft.extensions.dependencymodel/3.1.6/microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.extensions.fileproviders.abstractions/2.2.0/microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.extensions.hosting.abstractions/2.2.0/microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.extensions.logging.abstractions/2.2.0/microsoft.extensions.logging.abstractions.2.2.0.nupkg.sha512",
@@ -38,14 +40,17 @@
     "/home/felipe_buker/.nuget/packages/microsoft.identitymodel.tokens/6.19.0/microsoft.identitymodel.tokens.6.19.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "/home/felipe_buker/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/felipe_buker/.nuget/packages/microsoft.openapi/1.3.1/microsoft.openapi.1.3.1.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/mongodb.bson/2.15.1/mongodb.bson.2.15.1.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/mongodb.driver/2.15.1/mongodb.driver.2.15.1.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/mongodb.driver.core/2.15.1/mongodb.driver.core.2.15.1.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/mongodb.libmongocrypt/1.3.0/mongodb.libmongocrypt.1.3.0.nupkg.sha512",
+    "/home/felipe_buker/.nuget/packages/scrutor/3.3.0/scrutor.3.3.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/sharpcompress/0.30.1/sharpcompress.0.30.1.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/felipe_buker/.nuget/packages/swashbuckle.aspnetcore.filters/7.0.3/swashbuckle.aspnetcore.filters.7.0.3.nupkg.sha512",
+    "/home/felipe_buker/.nuget/packages/swashbuckle.aspnetcore.filters.abstractions/7.0.3/swashbuckle.aspnetcore.filters.abstractions.7.0.3.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
@@ -60,7 +65,8 @@
     "/home/felipe_buker/.nuget/packages/system.security.cryptography.xml/4.5.0/system.security.cryptography.xml.4.5.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/system.security.permissions/4.5.0/system.security.permissions.4.5.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
-    "/home/felipe_buker/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
+    "/home/felipe_buker/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
+    "/home/felipe_buker/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }

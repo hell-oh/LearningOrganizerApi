@@ -64,7 +64,7 @@ public class UsersService
     // }
 
 
-    public string Authenticate(string email, string password)
+    public async Task<string> Authenticate(string email, string password)
     {
         var user = _usersCollection.Find(x => x.Email == email && x.Password == password).FirstOrDefault();
         if (user is null)
@@ -86,6 +86,8 @@ public class UsersService
         };
 
         var token = tokenHandler.CreateToken(tokenDescriptor);
+        await _usersCollection.UpdateOneAsync(x => x.Email == email, new User { Token = tokenHandler.WriteToken(token) }.Token);
+
         return tokenHandler.WriteToken(token);
     }
 

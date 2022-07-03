@@ -22,7 +22,12 @@ public class LearningsService
     }
 
     public async Task<List<Learning>> GetAsync() =>
-        await _learningsCollection.Find(_ => true).ToListAsync();
+        await _learningsCollection.Find(x => x.Public == true).ToListAsync();
+
+
+    //Metodo de prueba, es más eficiente obtener desde el mismo usuario a menos que se quiera obtener datos adicionales de todos los learnings del usuario
+    public async Task<List<Learning>> GetByUserAsync(string id) =>
+        await _learningsCollection.Find(x => x.UserId == id).ToListAsync();
 
     public async Task<Learning?> GetAsync(string id) =>
         await _learningsCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
