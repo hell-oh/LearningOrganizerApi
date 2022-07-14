@@ -15,10 +15,15 @@ builder.Configuration.GetSection("LearningOrganizerDB"));
 builder.Services.AddSingleton<UsersService>();
 builder.Services.AddScoped<LearningsService>();
 
+builder.Services.AddScoped<NotesService>();
+builder.Services.AddScoped<CategoriesService>();
+
+builder.Services.AddControllersWithViews();
 builder.Services.AddControllers().AddJsonOptions(
         options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddRazorPages();
 builder.Services.AddSwaggerGen(options =>
 {
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -64,10 +69,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapRazorPages();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 // app.UseCors();
 app.Run();

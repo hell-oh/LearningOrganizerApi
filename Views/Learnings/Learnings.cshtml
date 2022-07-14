@@ -1,0 +1,23 @@
+@model List<LearningOrganizerApi.Models.Learning>
+@{
+    ViewData["Title"] = "Learning";
+    var learnings = ViewData["Learnings"] as List<LearningOrganizerApi.Models.Learning>;
+}
+<h1>Mis contenidos</h1>
+ 
+<div class="publics">
+        @foreach(var learning in learnings)
+        {
+            <div class="card"> 
+                <div class="content">
+                
+                    <h3>@learning.ContentName</h3>
+                    <p>@learning.Description</p>
+                    
+                </div>
+            </div>
+        }
+
+
+    
+</div>

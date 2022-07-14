@@ -12,12 +12,14 @@ public class Learning
     public string ContentName { get; set; } = null!;
     public string Category { get; set; } = null!;
     public string Description { get; set; } = null!;
-    public string Link { get; set; } = null!;
-    public int Priority { get; set; } = 0;
-    public int Difficulty { get; set; } = 0;
-    public string EstimatedTime { get; set; } = null!;
+    public string? favicon { get; set; } = null!;
+    public string? Link { get; set; } = null!;
+    public int? Priority { get; set; } = 0;
+    public int? Difficulty { get; set; } = 0;
+    public string? EstimatedTime { get; set; } = null!;
     public bool Completed { get; set; } = false;
     public bool Public { get; set; } = false;
+    public List<String>? Note { get; set; } = null!;
 
 
     // collección de notas

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LearningOrganizerApi.Controllers;
 
 // [DisableCors]
-[Authorize]
+// [Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class UsersController : ControllerBase

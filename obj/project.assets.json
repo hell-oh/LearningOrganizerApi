@@ -2289,11 +2289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/LearningOrganizerApi.csproj",
+      "projectUniqueName": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 4/ApiDotNet/LearningOrganizerApi/LearningOrganizerApi.csproj",
       "projectName": "LearningOrganizerApi",
-      "projectPath": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/LearningOrganizerApi.csproj",
+      "projectPath": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 4/ApiDotNet/LearningOrganizerApi/LearningOrganizerApi.csproj",
       "packagesPath": "/home/felipe_buker/.nuget/packages/",
-      "outputPath": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/obj/",
+      "outputPath": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 4/ApiDotNet/LearningOrganizerApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/felipe_buker/.nuget/NuGet/NuGet.Config"

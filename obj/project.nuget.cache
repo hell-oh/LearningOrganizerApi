@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y0hRtPDAs/YTIGH/3w5zhRS6tsFeMvJow8cNvZf6Ge6L5JugeMo+EncRLVtARUlSSXHSynDmCF/KmUxueKFENA==",
+  "dgSpecHash": "LyVH4MatNQ7Hy2cmruOVhHN2OYtvEQWr0mlqEDH5JHyo54Nc7RTMixzDuVsZ12j4HQk5/67Xx8PI+BiSyrK0bA==",
   "success": true,
-  "projectFilePath": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 2/ApiDotNet/LearningOrganizerApi/LearningOrganizerApi.csproj",
+  "projectFilePath": "/home/felipe_buker/Documents/personal/Inacap/Base de Datos No Estructuradas/proyecto evaluacion 4/ApiDotNet/LearningOrganizerApi/LearningOrganizerApi.csproj",
   "expectedPackageFiles": [
     "/home/felipe_buker/.nuget/packages/dnsclient/1.6.0/dnsclient.1.6.0.nupkg.sha512",
     "/home/felipe_buker/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

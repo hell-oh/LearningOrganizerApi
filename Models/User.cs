@@ -15,10 +15,16 @@ namespace LearningOrganizerApi.Models
         public string Email { get; set; } = null!;
         // public string Role { get; set; } = null!;
         public string? Token { get; set; } = null;
-
-
         // public string Role { get; set; } = null!;
-        public List<Learning> Learnings { get; set; } = null!;
+        public List<String>? Learnings { get; set; } = null!;
         
     }
 }
+
+
+
+
+
+
+
+

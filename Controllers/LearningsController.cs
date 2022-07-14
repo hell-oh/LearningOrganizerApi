@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace LearningOrganizerApi.Controllers;
 
 // [DisableCors]
-[Authorize]
+// [Authorize]
+    [AllowAnonymous]
+
 [ApiController]
 [Route("api/[controller]")]
 public class LearningsController : ControllerBase
@@ -21,7 +23,7 @@ public class LearningsController : ControllerBase
         _usersService = usersService;
     }
 
-    [AllowAnonymous]
+    // [AllowAnonymous]
     [HttpGet]
     public async Task<List<Learning>> Get() =>
         await _learningsService.GetAsync();
